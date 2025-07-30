@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="website icon" type="png" href="./images/Gray_and_Black_Simple_Studio_Logo__1_-removebg-preview.png">
+<link rel="stylesheet" href="styles.css">
+    <title>Web Development Basics - HTML, CSS, and JavaScript Fundamentals</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header id="header">
+    <div class="headeritems">
+        <div class="headerlogo">
+            <a href="index.html"> <img src="./images/Gray_and_Black_Simple_Studio_Logo__1_-removebg-preview.png" width="200px" height="200px"></a>
+        </div>
+        <div class="headertitle">
+        <h2>Web Development Learning Hub</h2>
+        <p>Your one-stop destination for mastering web development!</p>
+        </div>
+    </div>
+    </header>
+    <!-- Navigation Menu with Dropdown -->
+     <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">📖 About Web Dev</a>
+        <a href="basics.html">🎯 Basics of Web Dev</a>
+        
+        <!-- Dropdown for Developer Types -->
+        <div class="dropdown">
+            <a href="developers.html">👨‍💻 Developer Types ▼</a>
+            <div class="dropdown-content">
+                <a href="frontend.html">🎨 Frontend Developer</a>
+                <a href="backend.html">⚙️ Backend Developer</a>
+                <a href="fullstack.html">🔄 Full-Stack Developer</a>
+            </div>
+        </div>
+        
+        <a href="tools.html">🛠️ Tools & Editors</a>
+        <a href="resources.html">📚 Learning Resources</a>
+        <a href="contact.html">📞 Contact</a>
+    </nav>
+    <div class="gobottom">
+        <div class="gotobottom">
+          <button onclick="window.location.href='#footer'">GO TO BOTTOM<br><i class="bi bi-chevron-bar-down"></i></button>
+        </div>
+    </div>
+    <section>
+    <!-- Fundamentals -->
+    <div class="hero">
+   <h1>Web Development Fundamentals</h1>
+   <p>An essential overview of the core technologies and principles behind building modern websites and web applications</p>
+    </div>
+    <div class="content-section">
+     <h2>The Three Pillars of Web Development</h2>
+     <div class="feature-box">
+       <p>Every website and web application is built using three fundamental technologies that work together to create digital experiences. Think of these as the building blocks of the internet: <strong>HTML</strong> provides structure, <strong>CSS</strong> adds visual styling, and <strong>JavaScript</strong> brings interactivity and dynamic behavior.</p>
+       <p>Understanding these three technologies is essential for anyone serious about web development. While modern development often involves complex frameworks and tools, these core technologies remain the foundation that everything else builds upon.</p>
+     </div>
+    <!-- HTML Explanation -->
+    <h2>HTML - The Structure Foundation</h2>
+    <div class="feature-box">
+      <h3>What is HTML?</h3>
+        <p>HTML (HyperText Markup Language) is the backbone of every web page. It defines the structure and content of websites using a system of tags that describe different types of content. HTML tells the browser what each piece of content is - whether it's a heading, paragraph, list, image, or link.</p>
+        <p>HTML is a markup language, not a programming language. It uses tags written between angle brackets to mark up content. For example, the <strong>h1 tag</strong> creates main headings, while the <strong>p tag</strong> defines paragraphs. These tags give meaning to content, making it accessible to both browsers and assistive technologies.</p>
+        <div class="image-box2">
+        <div class="subfeature-box">
+          <div class="sideline">
+          </div>
+          <div class="h4-box">
+          <h4>Key HTML Concepts</h4>
+            <ul>
+                <li>Semantic markup that describes content meaning, not just appearance</li>
+                <li>Document structure with head and body sections for different types of information</li>
+                <li>Accessibility features like alt text for images and proper heading hierarchy</li>
+                <li>Form elements for user input and interaction</li>
+                <li>Links that connect pages and resources across the web</li>
+                <li>Media embedding for images, videos, and audio content</li>
+            </ul>
+          </div>
+        </div>
+        <img src="/images/html5-logo.png" alt="html">
+        </div>
+    </div>
+    <!-- CSS Section -->
+     <h2>CSS - Visual Design and Layout</h2>
+     <div class="feature-box">
+       <h3>What is CSS?</h3>
+         <p>CSS (Cascading Style Sheets) controls how HTML content looks and is arranged on the page. While HTML provides structure and meaning, CSS handles all visual aspects including colors, fonts, spacing, layout, and responsive design for different screen sizes.</p>
+         <p>CSS works by selecting HTML elements and applying style rules to them. The "cascading" nature means styles can inherit from parent elements and be overridden by more specific rules. This system allows for efficient styling of large websites while maintaining consistent design patterns.</p>
+         <div class="image-box2">
+         <div class="subfeature-box">
+          <div class="sideline">
+          </div>
+          <div class="h4-box">
+           <h4>What CSS Can Do</h4>
+             <ul>
+                <li>Typography control including font families, sizes, weights, and spacing</li>
+                <li>Color schemes and backgrounds including gradients and images</li>
+                <li>Layout systems using Flexbox and CSS Grid for responsive design</li>
+                <li>Animations and transitions for engaging user interactions</li>
+                <li>Responsive design that adapts to different screen sizes and devices</li>
+                <li>Print stylesheets for optimized printing of web content</li>
+             </ul>
+          </div>
+         </div>
+         <img src="/images/css-logo.png" alt="css">
+         </div>
+     </div>
+    <!-- JavaScript Section -->
+     <h2>JavaScript - Interactivity and Logic</h2>
+     <div class="feature-box">
+       <h3>What is JavaScript?</h3>
+         <p>JavaScript is the programming language of the web, bringing interactivity and dynamic behavior to websites. Unlike HTML and CSS, which are markup and styling languages, JavaScript is a full programming language that can process data, respond to user actions, and modify content in real-time.</p>
+         <p>JavaScript runs directly in web browsers, allowing websites to update content without reloading the page, validate form data before submission, create interactive maps and games, and communicate with web servers to fetch new information dynamically.</p>
+         <div class="image-box2">
+         <div class="subfeature-box">
+          <div class="sideline">
+          </div>
+          <div class="h4-box">
+           <h4>JavaScript Capabilities</h4>
+             <ul>
+                <li>Dynamic content updates without page reloads</li>
+                <li>User interface interactions like dropdown menus and modal dialogs</li>
+                <li>Form validation and real-time feedback to users</li>
+                <li>Animations and visual effects for enhanced user experience</li>
+                <li>Communication with web servers through APIs and AJAX</li>
+                <li>Local data storage and offline functionality</li>
+                <li>Integration with device features like cameras and GPS</li>
+             </ul>
+          </div>
+         </div>
+         <img src="/images/javascript-logo.png" alt="JavaScript">
+         </div>
+     </div>
+    <!-- Learning Journey Section -->
+     <h2>Your Learning Journey</h2>
+     <div class="feature-box2">
+      <div class="image-box">
+       <h3>Step 1: Master HTML Structure</h3>
+         <ol>
+            <li>Learn basic HTML tags and document structure</li>
+            <li>Practice creating semantic markup for different types of content</li>
+            <li>Understand accessibility principles and proper tag usage</li>
+            <li>Build several static web pages using only HTML</li>
+            <li>Validate your HTML code using W3C validation tools</li>
+            <li>Study advanced HTML features like forms and media elements</li>
+         </ol>
+      </div>
+      <img src="/images/HTML-Blog-Cover.svg" alt="html">
+     </div>
+     <div class="feature-box2">
+      <img src="/images/CSS Blog Cover.svg" alt="css">
+      <div class="image-box" style="margin-right: 5rem;">
+        <h3>Step 2: Add Visual Design with CSS</h3>
+          <ol>
+            <li>Learn CSS syntax and how to link stylesheets to HTML</li>
+            <li>Master selectors and understand the cascade and specificity</li>
+            <li>Practice typography, colors, and basic layout techniques</li>
+            <li>Learn Flexbox and CSS Grid for modern layout design</li>
+            <li>Understand responsive design and mobile-first development</li>
+            <li>Explore CSS animations and advanced visual effects</li>
+          </ol>
+      </div>
+     </div>
+     <div class="feature-box2">
+      <div class="image-box">
+        <h3>Step 3: Bring Interactivity with JavaScript</h3>
+          <ol>
+            <li>Learn programming fundamentals including variables and functions</li>
+            <li>Understand the Document Object Model (DOM) and how to manipulate HTML</li>
+            <li>Practice event handling for user interactions</li>
+            <li>Learn to work with data including arrays and objects</li>
+            <li>Understand asynchronous programming and API communication</li>
+            <li>Build interactive projects that combine all your skills</li>
+          </ol>
+      </div>
+      <img src="/images/JavaScript-Blog-Cover.svg" alt="JavaScript">
+     </div>
+    <!-- Project Suggestions -->
+     <h2>Hands-On Project Ideas</h2>
+     <div class="feature-box">
+       <p><strong>Start your learning journey with these progressive projects that build upon each other:</strong></p>
+         <div class="subfeature-box">
+          <div class="sideline">
+          </div>
+          <div class="h4-box">
+         <p>Begin with a simple personal resume page using only HTML to practice document structure and semantic markup. Focus on proper heading hierarchy, lists for skills and experience, and links to your social media profiles.</p>
+          </div>
+         </div>
+         <div class="subfeature-box">
+          <div class="sideline">
+          </div>
+          <div class="h4-box">
+         <p>Next, style your resume with CSS to create a professional, visually appealing design. Experiment with typography, colors, and layout to make your content shine. Make it responsive so it looks great on both desktop and mobile devices.</p>
+          </div>
+         </div>
+         <div class="subfeature-box">
+          <div class="sideline">
+          </div>
+          <div class="h4-box">
+         <p>Finally, add JavaScript interactivity such as a contact form with validation, smooth scrolling navigation, or a dynamic skills showcase. These projects will give you practical experience with all three core technologies while building portfolio pieces you can show to potential employers.</p>
+          </div>
+         </div>
+     </div>
+     <hr>
+    </div>
+    </section>
+    <div class="content-section" style="max-width: 1340px;
+             margin: 2rem auto 0 auto;
+             padding: 2rem; border-top: 2px solid #333; border-bottom: 2px solid #333;">
+    <h2 style="text-align: center;"> Test Your Knowledge</h2>
+    <div id="quiz-container" style="display: flex; flex-direction:column; align-items: center;">
+        <div id="question-area" style="text-align: center;">
+            <h3 id="question-text">Click "Start Quiz" to begin!</h3>
+            <div id="answer-buttons" style="display: flex; gap:5px; margin-top:0.5rem;"></div>
+        </div>
+        <div id="quiz-controls">
+            <button onclick="startQuiz()" id="start-btn" style="padding: 0.5rem 1rem; background-color:#2c3e50; color:white; border:none; border-radius:8px; margin-top: 0.5rem;">Start Quiz</button>
+            <button onclick="nextQuestion()" id="next-btn" style="display: none; padding: 0.5rem 1rem; background-color:#2c3e50; color:white; border:none; border-radius:8px; margin-top: 0.5rem;">Next Question</button>
+        </div>
+        <div id="quiz-results"></div>
+    </div>
+</div>
+
+<script>
+
+let quizQuestions = [
+    {
+        question: "What does HTML stand for?",
+        answers: ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlink Text Markup Language"],
+        correct: 0
+    },
+    {
+        question: "Which tag is used for the largest heading?",
+        answers: ["&lt;h6&gt;", "&lt;h1&gt;", "&lt;header&gt;"],
+        correct: 1
+    },
+    {
+        question: "What does CSS control?",
+        answers: ["Website functionality", "Visual styling and layout", "Database connections"],
+        correct: 1
+    },
+    {
+        question: "Which CSS property changes text color?",
+        answers: ["font-color", "text-color", "color"],
+        correct: 2
+    },
+    {
+        question: "What makes websites interactive?",
+        answers: ["HTML", "CSS", "JavaScript"],
+        correct: 2
+    },
+    {
+        question: "Which tag is used to create a hyperlink?",
+        answers: ["&lt;a&gt;", "&lt;link&gt;", "&lt;href&gt;"],
+        correct: 0
+    },
+    {
+        question: "What does the 'src' attribute in an &lt;img&gt; tag specify?",
+        answers: ["Image size", "Image source path", "Image title"],
+        correct: 1
+    },
+    {
+        question: "Which HTML element is used to create an unordered list?",
+        answers: ["&lt;ul&gt;", "&lt;ol&gt;", "&lt;li&gt;"],
+        correct: 0
+    },
+    {
+        question: "Which property is used to make text bold in CSS?",
+        answers: ["font-weight", "font-style", "text-decoration"],
+        correct: 0
+    },
+    {
+        question: "Which HTML tag is used to insert a line break?",
+        answers: ["&lt;br&gt;", "&lt;lb&gt;", "&lt;break&gt;"],
+        correct: 0
+    },
+    {
+        question: "Which symbol is used for comments in JavaScript?",
+        answers: ["//", "#", "&lt;!-- --&gt;"],
+        correct: 0
+    },
+    {
+        question: "Which of these is a JavaScript data type?",
+        answers: ["number", "bold", "header"],
+        correct: 0
+    },
+    {
+        question: "What does the 'id' attribute do in HTML?",
+        answers: ["Sets the font", "Gives a unique identifier", "Creates a heading"],
+        correct: 1
+    },
+    {
+        question: "Which CSS property controls the background color?",
+        answers: ["bg-color", "background-color", "color-background"],
+        correct: 1
+    },
+    {
+        question: "What is the correct way to write a function in JavaScript?",
+        answers: ["function = myFunc()", "function myFunc() {}", "create myFunc()"],
+        correct: 1
+    }
+];
+
+
+let currentQuestion = 0;
+let score = 0;
+let quizStarted = false;
+
+
+function startQuiz() {
+    quizStarted = true;
+    currentQuestion = 0;
+    score = 0;
+    
+    document.getElementById("start-btn").style.display = "none";
+    document.getElementById("quiz-results").innerHTML = "";
+    
+    displayQuestion();
+    console.log("Quiz started!");
+}
+
+
+function displayQuestion() {
+    if (currentQuestion < quizQuestions.length) {
+        let question = quizQuestions[currentQuestion];
+        
+        
+        document.getElementById("question-text").innerHTML = 
+            "Question " + (currentQuestion + 1) + ": " + question.question;
+        
+        
+        let buttonsHTML = "";
+        for (let i = 0; i < question.answers.length; i++) {
+            buttonsHTML += `<button onclick="selectAnswer(${i})" class="answer-btn">
+                            ${question.answers[i]}
+                            </button><br>`;
+        }
+        
+
+        document.getElementById("answer-buttons").innerHTML = buttonsHTML;
+        
+        
+        document.getElementById("next-btn").style.display = "none";
+        
+    } else {
+        showResults();
+    }
+}
+
+
+function selectAnswer(selectedIndex) {
+    let question = quizQuestions[currentQuestion];
+    let buttons = document.getElementsByClassName("answer-btn");
+    
+    
+    if (selectedIndex === question.correct) {
+        score++;
+        buttons[selectedIndex].style.backgroundColor = "#28a745";
+        buttons[selectedIndex].style.color = "white";
+        console.log("Correct answer! Score: " + score);
+    } else {
+        buttons[selectedIndex].style.backgroundColor = "#dc3545";
+        buttons[selectedIndex].style.color = "white";
+        
+        buttons[question.correct].style.backgroundColor = "#28a745";
+        buttons[question.correct].style.color = "white";
+        console.log("Wrong answer. Correct was: " + question.answers[question.correct]);
+    }
+    
+    
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].disabled = true;
+    }
+    
+   
+    document.getElementById("next-btn").style.display = "inline-block";
+}
+
+
+function nextQuestion() {
+    currentQuestion++;
+    displayQuestion();
+}
+
+
+function showResults() {
+    let percentage = Math.round((score / quizQuestions.length) * 100);
+    let resultMessage = "";
+    
+    if (percentage >= 80) {
+        resultMessage = "🎉 Excellent! You scored " + score + "/" + quizQuestions.length + " (" + percentage + "%)";
+    } else if (percentage >= 60) {
+        resultMessage = "👏 Good job! You scored " + score + "/" + quizQuestions.length + " (" + percentage + "%)";
+    } else {
+        resultMessage = "🧑‍💻 Keep learning! You scored " + score + "/" + quizQuestions.length + " (" + percentage + "%)";
+    }
+    
+    document.getElementById("question-text").innerHTML = "Quiz Complete!";
+    document.getElementById("answer-buttons").innerHTML = "";
+    document.getElementById("next-btn").style.display = "none";
+    document.getElementById("quiz-results").innerHTML = resultMessage;
+    document.getElementById("start-btn").style.display = "inline-block";
+    document.getElementById("start-btn").innerHTML = "Retake Quiz";
+    
+    console.log("Quiz completed. Final score: " + score + "/" + quizQuestions.length);
+}
+</script>
+    <div class="gotop">
+        <div class="gototop">
+          <button onclick="window.location.href='#header'"><i class="bi bi-chevron-bar-up"></i><br>GO TO TOP</button>
+        </div>
+    </div>
+     <footer id="footer">
+        <div  class="quick">
+            <div class="quicklinks">
+                <h2>Quick Links</h2>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="basics.html">Basics of Web Dev</a></li>
+                    <li><a href="tools.html"> Tools & Editors</a></li>
+                    <li><a href="resources.html"> Learning Resources</a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+            
+            <hr id="hr1">
+            
+            <div class="social">
+                    
+                 <p id="follow">Follow Us</p>
+                 <div class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=100066880653105" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.x.com/chanderbhanswa7/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/chanderbhan_swami/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/chanderbhanswami/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                 </div>
+            
+            </div>
+            <hr id="hr2">
+            
+
+        
+        <div class="copyright">
+        <p>&copy; <span id="year"></span> Web Development Learning Hub. All rights reserved.</p>
+        </div>
+        
+        <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </footer> 
+</body>
+</html>
